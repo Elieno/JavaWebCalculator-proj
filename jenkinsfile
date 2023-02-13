@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Check out') {
             steps {
-                sh 'checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Elieno/JavaWebCalculator-proj.git']])'
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Elieno/JavaWebCalculator-proj.git']])
             }
         }
         stage ('Build'){
