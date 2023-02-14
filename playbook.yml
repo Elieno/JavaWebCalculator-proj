@@ -56,7 +56,7 @@
       mode: 0755
   - name: deploying the new WAR-file to all target servers
     copy:
-      src: /var/lib/jenkins/workspace/JavaCalculatorWebApp/target/webapp-0.2.war
+      src: /var/lib/jenkins/workspace/JavaWebCal-job/target/webapp-0.2.war
       dest: /opt/tomcat8/webapps
       mode: 0755
       
